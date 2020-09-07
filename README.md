@@ -7,3 +7,5 @@ Log:
         -Created File Structure and github repository.
         -Tested creation of python code (on laptop)
         -Tested creation of java ui code (on laptop)
+    09-06-2020:
+        -Java UI Code
