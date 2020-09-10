@@ -5,17 +5,20 @@ import kivy
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.gridlayout import GridLayout
-from python_scripts import Accountview
-from python_scripts import Alltime
-from python_scripts import Calendarview
-from python_scripts import Dropdown
-from python_scripts import Sevenday
-from python_scripts import Tasksgrid
-from python_scripts import Todaylist
+# from python_scripts import Accountview
+# from python_scripts import Alltime
+# from python_scripts import Calendarview
+# from python_scripts import Dropdown
+# from python_scripts import Sevenday
+# from python_scripts import Tasksgrid
+# from python_scripts import Todaylist
+
+Builder.load_file('WindowCreator.kv')
 
 # MAIN
-#   BUILD main.kv file
-#   CREATE MainGrid (3 Cols and 1 Row) (main.kv)
+class WindowCreator(GridLayout):
+    pass
+#   CREATE MainGrid (3 Cols and 1 Row) (main.kv) (main.py)
 #     CREATE MenuGrid (Within MainGrid, will be on left side of screen, consists of a scrollable widget and another grid layout) (main.kv) (main.py)
 #       CREATE AccountViewWidget (Consists of AccountManagementWidget(will be a custom widget)) (accountview.kv) (Accountview.py)
 #       CREATE DropDownGrid (2 drop down menus for quick access to other widgets) (dropdown.kv) (Dropdown.py)
@@ -33,10 +36,14 @@ from python_scripts import Todaylist
 #       CREATE CalendarViewList (The list of items that are on that day) (calendarview.kv) (Calendarview.py)
 # END MAIN
 
+class MainClass(App, GridLayout):
+    def build(self):
+        return WindowCreator()
+
 # LOOP
 #   IF (__name__ == "__main__") THEN
 if __name__ == '__main__':
 #     MAIN().run()
-    Main().run()
+    MainClass().run()
 #   ENDIF
 # END LOOP
