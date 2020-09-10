@@ -1,5 +1,5 @@
 # MinutePlanner
-A project given to me by Colleen McCollough for one of her classes.
+A project given to me by Colleen McCollough for the creation of an application for windows/macos/linux/iphone/ipados/android/
 
 Log:
 
