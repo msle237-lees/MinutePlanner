@@ -4,6 +4,7 @@ import os
 import kivy
 from kivy.app import App
 from kivy.lang import Builder
+from kivy.uix.gridlayout import GridLayout
 from python_scripts import Accountview
 from python_scripts import Alltime
 from python_scripts import Calendarview
@@ -13,6 +14,7 @@ from python_scripts import Tasksgrid
 from python_scripts import Todaylist
 
 # MAIN
+#   BUILD main.kv file
 #   CREATE MainGrid (3 Cols and 1 Row) (main.kv)
 #     CREATE MenuGrid (Within MainGrid, will be on left side of screen, consists of a scrollable widget and another grid layout) (main.kv) (main.py)
 #       CREATE AccountViewWidget (Consists of AccountManagementWidget(will be a custom widget)) (accountview.kv) (Accountview.py)
@@ -33,6 +35,8 @@ from python_scripts import Todaylist
 
 # LOOP
 #   IF (__name__ == "__main__") THEN
+if __name__ == '__main__':
 #     MAIN().run()
+    Main().run()
 #   ENDIF
 # END LOOP
