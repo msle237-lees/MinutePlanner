@@ -4,8 +4,8 @@
 //Reason why I am not using something like C++ or Java is because I know and understand the Kivy library in Python
 //Each separate function is a separate file within the directory.
 
+CREATE Necessary Libraries and initialization variables
 MAIN
-  CREATE Necessary Libraries and initialization variables
   CREATE MainGrid (3 Cols and 1 Row) (main.kv)
     CREATE MenuGrid (Within MainGrid, will be on left side of screen, consists of a scrollable widget and another grid layout) (main.kv) (main.py)
       CREATE AccountViewWidget (Consists of AccountManagementWidget(will be a custom widget)) (accountview.kv) (Accountview.py)
@@ -22,6 +22,10 @@ MAIN
     CREATE CalenderGrid (Within MainGrid, it will be right side of screen, consists of a Calendar and a scrollable widget)
       CREATE CalenderView (A user interactive calender that allows the user to see what they have going on for a certain day) (calendarview.kv) (Calendarview.py)
       CREATE CalendarViewList (The list of items that are on that day) (calendarview.kv) (Calendarview.py)
-
-
 END MAIN
+
+LOOP
+  IF (__name__ == "__main__") THEN
+    MAIN().run()
+  ENDIF
+END LOOP
