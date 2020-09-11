@@ -1,26 +1,38 @@
 <WindowCreator>:
+#CREATE MainGrid (3 Cols and 1 Row) (main.kv)
     GridLayout:
         rows: 1
-        cols: 1
-        size_hint: 1, 1
+        cols: 3
+        size: root.width, root.height
+        #CREATE MenuGrid (Within MainGrid, will be on left side of screen, consists of a scrollable widget and another grid layout) (main.kv) (main.py)
         GridLayout:
             rows: 2
+            cols: 1
+            #CREATE AccountViewWidget (Consists of AccountManagementWidget(will be a custom widget)) (accountview.kv) (Accountview.py)
+            Button:
+                text: "Place Holder"
+                size_hint: 1, 0.25
+            GridLayout:
+                rows: 3
+                cols: 1
+                #CREATE DropDown2Item1 (A button that pulls up a today item list with all calendar events for that day) (dropdown.kv) (Dropdown.py)
+                Button:
+                    text: "Place Holder"
+                    size_hint: 1, 1
+                #CREATE DropDown2Item2 (A button that pulls up a next 7 days item list with all calendar events for the next 7 days) (dropdown.kv) (Dropdown.py)
+                Button:
+                    text: "Place Holder"
+                    size_hint: 1, 1
+                #CREATE DropDown2Item3 (A button that pulls up any calendar items) (dropdown.kv) (Dropdown.py)
+                Button:
+                    text: "Place Holder"
+                    size_hint: 1, 1
+        GridLayout:
+            rows: 3
             cols: 1
             Button:
                 text: "Place Holder"
                 size_hint: 1, 1
-            GridLayout:
-                rows: 2
-                cols: 1
-                GridLayout:
-                    rows: 3
-                    cols: 1
-                    Button:
-                        text: "Place Holder"
-                        size_hint_x: 1, 1
-                    Button:
-                        text: "Place Holder"
-                        size_hint_x: 1, 1
-                    Button:
-                        text: "Place Holder"
-                        size_hint_x: 1, 1
+        GridLayout:
+            rows: 3
+            cols: 1

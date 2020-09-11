@@ -3,6 +3,7 @@
 //Date: 09-10-2020
 //Reason why I am not using something like C++ or Java is because I know and understand the Kivy library in Python
 //Each separate function is a separate file within the directory.
+//Windows / IOS / MacOS / Linux / Android / IpadOS
 
 CREATE Necessary Libraries and initialization variables
 MAIN

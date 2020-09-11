@@ -5,6 +5,7 @@ import kivy
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.gridlayout import GridLayout
+from kivy.uix.boxlayout import BoxLayout
 # from python_scripts import Accountview
 # from python_scripts import Alltime
 # from python_scripts import Calendarview
@@ -18,7 +19,7 @@ Builder.load_file('WindowCreator.kv')
 # MAIN
 class WindowCreator(GridLayout):
     pass
-#   CREATE MainGrid (3 Cols and 1 Row) (main.kv) (main.py)
+#   CREATE MainGrid (3 Cols and 1 Row) (main.kv)
 #     CREATE MenuGrid (Within MainGrid, will be on left side of screen, consists of a scrollable widget and another grid layout) (main.kv) (main.py)
 #       CREATE AccountViewWidget (Consists of AccountManagementWidget(will be a custom widget)) (accountview.kv) (Accountview.py)
 #       CREATE DropDownGrid (2 drop down menus for quick access to other widgets) (dropdown.kv) (Dropdown.py)
@@ -32,6 +33,8 @@ class WindowCreator(GridLayout):
 #       CREATE SevenDayList (Will pull data from calendar that is saved for that client and show all tasks for the next 7 days) (sevenday.kv) (Sevenday.py)
 #       CREATE AllTimeList (Will contain all events from calendar for that client) (alltime.kv) (Alltime.py)
 #     CREATE CalenderGrid (Within MainGrid, it will be right side of screen, consists of a Calendar and a scrollable widget) (main.kv) (main.py)
+#       CREATE CalenderView (A user interactive calender that allows the user to see what they have going on for a certain day) (calendarview.kv) (Calendarview.py)
+#       CREATE CalenderView (A user interactive calender that allows the user to see what they have going on for a certain day) (calendarview.kv) (Calendarview.py)
 #       CREATE CalenderView (A user interactive calender that allows the user to see what they have going on for a certain day) (calendarview.kv) (Calendarview.py)
 #       CREATE CalendarViewList (The list of items that are on that day) (calendarview.kv) (Calendarview.py)
 # END MAIN
